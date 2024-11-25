@@ -46,7 +46,7 @@ The **Random Password Generator (RPG)** is a secure password creation tool with 
 
 ### **Step 1**: Clone the Repository  
 ```bash
-git clone <https://github.com/PawanRajwar/Random-Password-Generator-RPG-.git>
+git clone https://github.com/PawanRajwar/Random-Password-Generator-RPG-.git
 cd random-password-generator
 ```
 
