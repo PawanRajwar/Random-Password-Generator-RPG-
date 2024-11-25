@@ -1,81 +1,94 @@
-# Random Password Generator ( RPG )
 
-## Overview
+# **🔑 Random Password Generator (RPG)**  
 
-This application is a Random Password Generator built using Python with a graphical user interface (GUI) created using the tkinter library. The program allows users to generate secure passwords of customizable length. It guarantees at least one character from each category (uppercase letters, lowercase letters, digits, and special characters) for robust password security. Additionally, users can copy the generated password to the clipboard.
+---
 
-## Features
-1. Random Password Generation:
-   - Customizable password length (minimum of 4 characters).
+## **👨‍🏫 Submitted To**  
+**Dr. Prateek Raj Gautam**  
 
-   - Includes at least one of each: uppercase letter, lowercase letter, digit, and special character.
+---
 
-   - Shuffles characters to ensure randomness.
+## **👨‍🎓 Submitted By**  
+- **Name**: Pawan Singh Rajwar  
+- **SAP ID**: 590017545  
 
-2. User-Friendly Interface:
-   - Input field to specify password length.
+---
 
-   - Button to generate passwords with instant display.
+## **📄 Project Title**  
+**Random Password Generator (RPG)**  
 
-   - Button to copy the password to the clipboard for easy use.
+---
 
-3. Error Handling:
-   - Alerts users if the password length is invalid (e.g., less than 4 or non-numeric).
+## **📖 Description**  
+The **Random Password Generator (RPG)** is a secure password creation tool with a user-friendly graphical interface built using Python's **Tkinter library**. It ensures strong password security by including uppercase letters, lowercase letters, digits, and special characters in every generated password. Users can specify the password length and easily copy the password to the clipboard for use.  
 
+---
 
-## How It Works
+## **✨ Features**  
 
-### Components:
+### 🔐 **Random Password Generation**:
+- Customizable password length with a minimum of 4 characters.  
+- Guarantees inclusion of at least one uppercase letter, lowercase letter, digit, and special character.  
+- Shuffles characters to ensure randomness.  
 
-1. Password Length Input:
-   - An input field where users specify the desired length of the password.
+### 💡 **User-Friendly Interface**:
+- Input field for specifying password length.  
+- One-click password generation with instant display.  
+- Button to copy the password to the clipboard with confirmation pop-up.  
 
-   - Ensures that the length is a valid number and is at least 4.
+### ⚠️ **Error Handling**:
+- Notifies users if the password length is invalid (e.g., less than 4 or non-numeric).  
+- Warns users when attempting to copy a password before generating one.  
 
-2. Generate Password Button:
-   - Validates the length entered by the user.
+---
 
-   - Generates a password by:
-     - Ensuring at least one uppercase letter, lowercase letter, digit, and special character.
+## **📥 Installation**  
 
-     - Filling the remaining characters with a random selection from all categories.
+### **Step 1**: Clone the Repository  
+```bash
+git clone <https://github.com/PawanRajwar/Random-Password-Generator-RPG-.git>
+cd random-password-generator
+```
 
-     - Shuffling the final password to maximize randomness.
+### **Step 2**: Install Required Libraries  
+- Python's Tkinter library is pre-installed with Python, so no extra installation is needed.  
+- Ensure Python 3.x is installed on your system. You can download it [here](https://www.python.org/downloads/).
 
-    - Displays the generated password in the output field.
+---
 
-3. Password Output Field:
-   - A text field where the generated password is displayed.
+## **📂 Usage**  
 
-4. Copy to Clipboard Button:
-   - Copies the displayed password to the clipboard for use elsewhere.
+### **Step 1**: Run the Script  
+Execute the script using Python:  
+```bash
+python password_generator.py
+```  
 
-   - Displays a confirmation message when successful.
+### **Step 2**: Set Password Length  
+- Enter the desired length for the password in the "Password Length" field.  
+- Ensure the length is at least 4 characters.  
 
-5. Error and Warning Messages:
-   - Alerts users if they input an invalid length or try to copy a password when none has been generated.
+### **Step 3**: Generate Password  
+- Click the **Generate Password** button.  
+- The password will appear in the output field below.  
 
+### **Step 4**: Copy to Clipboard  
+- Click the **Copy to Clipboard** button to copy the password.  
+- A pop-up notification will confirm success.  
 
-## Usage
-1. Run the Script: Execute the script using Python: python password_generator.py
+---
 
-2. Set Password Length:
-   - In the GUI, enter the desired length for your password in the Password Length field.
+## **📚 Requirements**  
+- Python 3.x  
+- Tkinter (pre-installed with Python on most systems)  
 
-   - Note: The length must be at least 4.
+---
 
-3. Generate Password:
-   - Click the Generate Password button.
+## **📸 Screenshots**  
 
-   - The generated password will appear in the text field below.
+### 💻 **Main Interface**:
+![Screenshot of Random Password Generator](<Screenshot 2024-11-25 122143-1.png>)  
 
-4. Copy the Password:
-   - Click the Copy to Clipboard button to copy the generated password.
+### 📋 **Copy to Clipboard Functionality**:
+![Copy to clipboard Functionality](<Screenshot 2024-11-25 122200-1.png>)  
 
-   - A pop-up confirmation will notify you when the password is successfully copied.
-
-
-## Requirements
-- Python 3.x
-
-- tkinter (pre-installed with Python on most systems)
