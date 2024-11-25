@@ -16,3 +16,26 @@ def generate_password():
         uppercase_letters = string.ascii_uppercase
         digits = string.digits
         special_characters = string.punctuation
+        
+        
+        # Guarantee at least one character from each category
+        password = [
+            random.choice(lowercase_letters),
+            random.choice(uppercase_letters),
+            random.choice(digits),
+            random.choice(special_characters)
+        ]
+
+        # Fill the remaining length with random choices from all categories
+        all_characters = lowercase_letters + uppercase_letters + digits + special_characters
+        password += random.choices(all_characters, k=length - 4)
+
+        # Shuffle the password to mix the characters
+        random.shuffle(password)
+
+        # Display the generated password
+        result_entry.delete(0, tk.END)
+        result_entry.insert(0, ''.join(password))
+    except ValueError:
+        messagebox.showerror("Error", "Please enter a valid number.")
+
