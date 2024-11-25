@@ -54,3 +54,28 @@ This application is a Random Password Generator built using Python with a graphi
 
 5. Error and Warning Messages:
    - Alerts users if they input an invalid length or try to copy a password when none has been generated.
+
+
+## Usage
+1. Run the Script: Execute the script using Python: python password_generator.py
+
+2. Set Password Length:
+   - In the GUI, enter the desired length for your password in the Password Length field.
+
+   - Note: The length must be at least 4.
+
+3. Generate Password:
+   - Click the Generate Password button.
+
+   - The generated password will appear in the text field below.
+
+4. Copy the Password:
+   - Click the Copy to Clipboard button to copy the generated password.
+
+   - A pop-up confirmation will notify you when the password is successfully copied.
+
+
+## Requirements
+- Python 3.x
+
+- tkinter (pre-installed with Python on most systems)

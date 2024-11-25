@@ -39,3 +39,14 @@ def generate_password():
     except ValueError:
         messagebox.showerror("Error", "Please enter a valid number.")
 
+
+# Function to copy the password to the clipboard
+def copy_to_clipboard():
+    password = result_entry.get()
+    if password:
+        root.clipboard_clear()
+        root.clipboard_append(password)
+        root.update()  # Updates the clipboard with new data
+        messagebox.showinfo("Copied", "Password copied to clipboard!")
+    else:
+        messagebox.showwarning("Warning", "No password to copy.")
