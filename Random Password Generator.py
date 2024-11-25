@@ -50,3 +50,29 @@ def copy_to_clipboard():
         messagebox.showinfo("Copied", "Password copied to clipboard!")
     else:
         messagebox.showwarning("Warning", "No password to copy.")
+
+# Setting up the main Tkinter window
+root = tk.Tk()
+root.title("Password Generator")
+root.geometry("400x300")
+root.resizable(False, False)
+
+# Header label
+header_label = tk.Label(root, text="Random Password Generator", font=("Helvetica", 16))
+header_label.pack(pady=10)
+
+# Frame for password length input
+length_frame = tk.Frame(root)
+length_frame.pack(pady=10)
+length_label = tk.Label(length_frame, text="Password Length:", font=("Helvetica", 12))
+length_label.pack(side=tk.LEFT, padx=5)
+length_input = tk.Entry(length_frame, font=("Helvetica", 12), width=10)
+length_input.pack(side=tk.LEFT)
+
+# Generate button
+generate_button = tk.Button(root, text="Generate Password", font=("Helvetica", 12), command=generate_password)
+generate_button.pack(pady=10)
+
+# Entry to display the result
+result_entry = tk.Entry(root, font=("Helvetica", 12), width=30, justify="center")
+result_entry.pack(pady=10)
