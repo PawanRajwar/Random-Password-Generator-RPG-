@@ -76,3 +76,10 @@ generate_button.pack(pady=10)
 # Entry to display the result
 result_entry = tk.Entry(root, font=("Helvetica", 12), width=30, justify="center")
 result_entry.pack(pady=10)
+
+# Copy button
+copy_button = tk.Button(root, text="Copy to Clipboard", font=("Helvetica", 12), command=copy_to_clipboard)
+copy_button.pack(pady=10)
+
+# Start the Tkinter event loop
+root.mainloop()
